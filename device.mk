@@ -30,6 +30,7 @@ $(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -197,6 +198,7 @@ PRODUCT_COPY_FILES += \
 
 # Handheld hardware
 PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.freeform_window_management.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # Health
