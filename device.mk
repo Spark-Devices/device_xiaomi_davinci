@@ -438,3 +438,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Seamless transfer
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.fflag.override.settings_seamless_transfer=true
+
