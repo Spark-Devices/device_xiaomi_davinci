@@ -72,6 +72,73 @@
     <string name="popup_title_jijia">Mecha</string>
     <string name="popup_title_chilun">Koło zębate</string>
     <string name="popup_title_cangmen">Drzwi szafy</string>
+
+    <string name="popup_title">Ustawienia przedniej kamery</string>
+    <string name="popup_led_title">Dioda LED przedniej kamery</string>
+    <string name="popup_led_summary">Włącz diodę LED, gdy przednia kamera pojawia się i chowa</string>
+    <string name="popup_sound_title">Efekty dzwiękowe</string>
+    <string name="popup_sound_muqin">Ksylofon</string>
+    <string name="popup_sound_yingyan">Kondor</string>
+    <string name="popup_sound_mofa">Magia</string>
+    <string name="popup_sound_jijia">Mecha</string>
+    <string name="popup_sound_chilun">Koło zębate</string>
+    <string name="popup_sound_cangmen">Drzwi kabiny</string>
+    <string name="popup_sound_imperial_march">Star Wars© Marsz Imperialny</string>
+    <string name="popup_sound_lightsaber">Star Wars© Miecz Świetlny</string>
+    <string name="popup_sound_throne_room">Star Wars© Sala Tronowa</string>
+    <string name="popup_super_mario">Super Mario</string>
+    <string name="popup_calibration_title">Kalibracja</string>
+    <string name="popup_calibration_summary">Skalibruj silnik kamery</string>
+    <string name="popup_calibration_warning_title">Kalibracja silnika</string>
+    <string name="popup_calibration_warning_text">Niepotrzebne użycie kalibracji może spowodować trwałe uszkodzenie. Zaleca się kalibrację silnika wysuwanej kamery tylko w przypadku, gdy nie porusza się ona prawidłowo lub jest w niewłaściwej pozycji!</string>
+
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable">Włącz ograniczenie migotania</string>
+    <string name="dc_dimming_title">Ograniczenie migotania</string>
+    <string name="dc_dimming_summary">Zmniejsza zmęczenie oczu w słabych warunkach oświetleniowych</string>
+    <string name="dc_dimming_summary_on">Włączone</string>
+    <string name="dc_dimming_summary_off">Wyłączone</string>
+    <string name="dc_dimming_info">Zmniejsza zmęczenie oczu w słabych warunkach oświetleniowych,ale może skutkować obniżoną jakością obrazu i słabym odwzorowaniem kolorów.</string>
+    <string name="dc_dimming_auto_mode_title">Harmonogram</string>
+    <string name="dc_dimming_mode_never">Żaden</string>
+    <string name="dc_dimming_mode_time">Włącz o określonej godzinie</string>
+    <string name="dc_dimming_mode_brightness">Włącz, gdy jasność spadnie poniżej progu</string>
+    <string name="dc_dimming_mode_full">Zależy od czasu i jasności</string>
+    <string name="dc_dimming_brightness_title">Próg jasności</string>
+    <string name="dc_dimming_brightness_info">Aktywuj ograniczenie migotania tylko wtedy, gdy średnia jasność jest poniżej progu</string>
+    <string name="dc_dimming_off_auto_mode_auto">Włączy się automatycznie</string>
+    <string name="dc_dimming_on_auto_mode_auto">Wyłączy się automatycznie</string>
+    <string name="dc_dimming_start_time">Czas rozpoczęcia</string>
+    <string name="dc_dimming_end_time">Koniec czasu</string>
+    <string name="dc_dimming_node">/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable</string>
+
+
+    <!-- Pick-up to wake gesture-->
+    <string name="wake_gesture_title">Wybudź</string>
+    <string name="wake_gesture_summary">Wybudź urządzenie zamiast pulsujących powiadomień</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Profile termiczne</string>
+    <string name="thermal_summary">Dostosuj profile termiczne  dla aplikacji, aby uzyskać optymalną wydajność</string>
+    <string name="thermal_default">Domyślny</string>
+    <string name="thermal_benchmark">Testy wydajności</string>
+    <string name="thermal_browser">Przeglądarka</string>
+    <string name="thermal_camera">Aparat</string>
+    <string name="thermal_dialer">Dzwonienie</string>
+    <string name="thermal_gaming">Granie</string>
+    <string name="thermal_streaming">Transmisja na żywo</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Kontrola dotyku</string>
+    <string name="touch_game_mode_title">Włącz tryb gry</string>
+    <string name="touch_game_mode_summary">Zwiększa częstotliwość próbkowania dotykowego do 180Hz</string>
+    <string name="touch_response_title">Responsywność dotyku</string>
+    <string name="touch_response_summary">Kontroluje responsywność dotyku</string>
+    <string name="touch_sensitivity_title">Czułość dotyku</string>
+    <string name="touch_sensitivity_summary">Kontroluje czułość dotyku w przypadku wielokrotnych kliknięć</string>
+    <string name="touch_resistant_title">Obszar poza dotykiem</string>
+    <string name="touch_resistant_summary">Zmniejsz czułość dotyku w pobliżu krawędzi, aby uniknąć sterowania dotykowego</string>
+
     <!-- Popup camera strings -->
     <string name="popup_camera_tip">Uwaga</string>
     <string name="popup_camera_takeback_falied_times_calibrate">Nie udało się zamknąć przedniego aparatu kilka razy z rzędu. Spróbuj go skalibrować.</string>
