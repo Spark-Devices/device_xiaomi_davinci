@@ -47,4 +47,20 @@
     <string name="thermal_dialer">App Telefono</string>
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_streaming">Streaming</string>
+
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Impostazioni colore display</string>
+    <string name="kcal_settings_summary">Calibra i colori del display</string>
+    <string name="kcal_enable_title">Abilita configurazione colori</string>
+    <string name="kcal_enable_summary">Abilita la configurazione dei colori del display per un\'impostazione personalizzata</string>
+    <string name="red_slider_title">Rosso</string>
+    <string name="green_slider_title">Verde</string>
+    <string name="blue_slider_title">Blu</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Calibrazione colori</string>
+    <string name="saturation_slider_title">Saturazione</string>
+    <string name="reset_default_button_title">Resetta ai valori predefiniti</string>
+    <string name="reset_default_button_summary">Resetta tutte le impostazioni di questa schermata</string>
+    <string name="contrast_slider_title">Contrasto</string>
+
 </resources>
