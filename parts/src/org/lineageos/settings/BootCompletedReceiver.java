@@ -44,11 +44,12 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
 
-        KcalUtils.writeCurrentSettings(sharedPrefs);
-
         DozeUtils.checkDozeService(context);
         PopupCameraUtils.startService(context);
         ThermalUtils.startService(context);
+
+        if (KcalUtils.isKcalSupported())
+            KcalUtils.writeCurrentSettings(sharedPrefs);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
