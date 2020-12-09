@@ -63,4 +63,16 @@
     <string name="reset_default_button_summary">Resetta tutte le impostazioni di questa schermata</string>
     <string name="contrast_slider_title">Contrasto</string>
 
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Controllo del tocco</string>
+    <string name="touch_game_mode_title">Abilita modalità gioco</string>
+    <string name="touch_game_mode_summary">Aumenta il touch sampling rate a 180hz</string>
+    <string name="touch_response_title">Risposta al tocco</string>
+    <string name="touch_response_summary">Controlla risposta al tocco</string>
+    <string name="touch_sensitivity_title">Sensibilità tocco</string>
+    <string name="touch_sensitivity_summary">Controlla la sensibilità del touch screen per tocchi ripetuti</string>
+    <string name="touch_resistant_title">Area non toccabile</string>
+    <string name="touch_resistant_summary">Riduce la sensibilità al tocco in prossimità dei bordi per evitare tocchi accidentali</string>
+
+
 </resources>
