@@ -147,6 +147,7 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libSuperSensor.so
+vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libVDClearShot.so
