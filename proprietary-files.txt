@@ -556,6 +556,12 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
+# HotwordEnrollment from - Mi 10 (umi) 12.1.2.0.RJBMIXM
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|70c94d028548e42927adb6db59e8ef12
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|b7e47ec2e49a664b44875ac402e22d26
+system_ext/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|666c1f4b08da02ca4475d09ce94c242c;PRESIGNED
+system_ext/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|883c2a87f8b862082ce96055eda9950c;PRESIGNED
+
 # IMS
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
