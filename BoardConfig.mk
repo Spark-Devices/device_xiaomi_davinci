@@ -217,3 +217,6 @@ PRODUCT_USES_QCOM_HARDWARE := true
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
+
+# ANXCamera
+include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
