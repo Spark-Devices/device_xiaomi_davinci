@@ -39,3 +39,6 @@
 /sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
+
+# Vibrator
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm6150@1:qcom,vibrator@5300/leds/vibrator/vtg_level u:object_r:sysfs_vibrator:s0

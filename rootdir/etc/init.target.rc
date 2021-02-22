@@ -104,6 +104,12 @@ on boot
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
 
+	# Vibration
+    chown system system /sys/class/leds/vibrator/vtg_level
+    chmod 0660 /sys/class/leds/vibrator/vtg_level
+    chown system system /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm6150@1:qcom,vibrator@5300/leds/vibrator/vtg_level
+    chmod 0660 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-01/c440000.qcom,spmi:qcom,pm6150@1:qcom,vibrator@5300/leds/vibrator/vtg_level
+
 on property:sys.boot_completed=1
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
