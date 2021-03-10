@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_davinci.mk
+    $(LOCAL_DIR)/spark_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_davinci-user \
-    lineage_davinci-userdebug \
-    lineage_davinci-eng
+    spark_davinci-user \
+    spark_davinci-userdebug \
+    spark_davinci-eng

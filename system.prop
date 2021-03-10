@@ -40,3 +40,6 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+ro.spark.status=Official
+ro.spark.maintainer=spkal01
