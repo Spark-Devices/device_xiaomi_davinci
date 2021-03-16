@@ -3,7 +3,7 @@
         "remote": "gitlab",
         "repository": "spkal01/vendor_aenoax_anxcamera",            
         "target_path": "vendor/aeonax/ANXCamera",
-        "branch": "fire"
+        "branch": "11"
     },
     {
         "remote": "gitlab",
