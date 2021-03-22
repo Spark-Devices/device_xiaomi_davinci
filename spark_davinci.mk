@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, spark/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 PRODUCT_NAME := spark_davinci
 PRODUCT_DEVICE := davinci
@@ -34,3 +34,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 SPARK_BUILD_TYPE := OFFICIAL
 TARGET_USES_BLUR := true
+WITH_FOD_ANIMATIONS := true
