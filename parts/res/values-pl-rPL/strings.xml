@@ -62,17 +62,8 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
-    <!-- Popup camera settings -->
-    <string name="popup_led_title">Efekt wizualny</string>
-    <string name="popup_led_summary">Pokaż animację podczas wysuwania i zamykania przedniego aparatu</string>
-    <string name="popup_title">Efekty przedniego aparatu</string>
-    <string name="popup_title_muqin">Ksylofon</string>
-    <string name="popup_title_yingyan">Kondor</string>
-    <string name="popup_title_mofa">Magia</string>
-    <string name="popup_title_jijia">Mecha</string>
-    <string name="popup_title_chilun">Koło zębate</string>
-    <string name="popup_title_cangmen">Drzwi szafy</string>
 
+    <!-- Popup camera settings -->
     <string name="popup_title">Ustawienia przedniej kamery</string>
     <string name="popup_led_title">Dioda LED przedniej kamery</string>
     <string name="popup_led_summary">Włącz diodę LED, gdy przednia kamera pojawia się i chowa</string>
