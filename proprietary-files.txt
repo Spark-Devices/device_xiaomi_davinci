@@ -316,6 +316,9 @@ media/audio/ui/popup_super_mario_down.ogg|8cb36a344e844c2909e5eaf0c5329c7043f0ad
 media/audio/ui/popup_super_mario_up.ogg|a3d022ef6b3654be67a55180b5a5150dfb837060
 media/audio/ui/popup_jojo_up.ogg|6f1414280eaf698fa4b9d83b1ef707aee81cb360
 media/audio/ui/popup_jojo_down.ogg|4aad4654a305eefcaf110d52bb5914aafc5d89e1
+media/audio/ui/popup_anime_moan_down.ogg|d458cc92846130f33212a82c71533c2448987380
+media/audio/ui/popup_anime_moan_up.ogg|98b48fc4eadbf85646f1dd83ef50857d90b1e2a2
+
 # Charger
 vendor/bin/hvdcp_opti
 
