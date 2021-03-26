@@ -314,7 +314,8 @@ media/audio/ui/popup_throne_room_down.ogg|0a250fbad938fb64cdf1d19220bf02e50811ff
 media/audio/ui/popup_throne_room_up.ogg|e52d7c2a15f899a02ae02184a31ffe89f6bc167c
 media/audio/ui/popup_super_mario_down.ogg|8cb36a344e844c2909e5eaf0c5329c7043f0ad8f
 media/audio/ui/popup_super_mario_up.ogg|a3d022ef6b3654be67a55180b5a5150dfb837060
-
+media/audio/ui/popup_jojo_up.ogg|6f1414280eaf698fa4b9d83b1ef707aee81cb360
+media/audio/ui/popup_jojo_down.ogg|4aad4654a305eefcaf110d52bb5914aafc5d89e1
 # Charger
 vendor/bin/hvdcp_opti
 

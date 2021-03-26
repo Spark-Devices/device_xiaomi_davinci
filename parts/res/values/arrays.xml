@@ -27,6 +27,7 @@
         <item>@string/popup_sound_lightsaber</item>
         <item>@string/popup_sound_throne_room</item>
 	<item>@string/popup_super_mario</item>
+	<item>@string/popup_jojo</item>
     </string-array>
 
     <string-array name="popupcamera_effects_names" translatable="false">
@@ -50,6 +51,8 @@
         <item>popup_throne_room_down.ogg</item>
         <item>popup_super_mario_up.ogg</item>
         <item>popup_super_mario_down.ogg</item>
+	<item>popup_jojo_up.ogg</item>
+	<item>popup_jojo_down.ogg</item>
     </string-array>
 
     <string-array name="popupcamera_effects_values">
@@ -64,5 +67,6 @@
         <item>14</item>
         <item>16</item>
         <item>18</item>
+	<item>20</item>
     </string-array>
 </resources>
