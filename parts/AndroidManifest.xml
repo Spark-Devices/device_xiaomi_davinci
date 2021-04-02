@@ -51,6 +51,16 @@
             android:permission="XiaomiDcDimmingService"></service>
 
         <service
+            android:name=".display.DcDimmingTile"
+            android:icon="@drawable/ic_dc_dimming_tile"
+            android:label="@string/dc_dimming_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
+        <service
             android:name=".doze.DozeService"
             android:permission="XiaomiDozeService"></service>
 
@@ -64,6 +74,7 @@
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
             </intent-filter>
 
             <meta-data
