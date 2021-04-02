@@ -33,6 +33,7 @@ import android.view.Display;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -56,6 +57,7 @@ public class DcDimmingService extends Service {
     private static final String TAG = "DcDimmingService";
     private Context mContext;
     private String mDcDimmingNode;
+    private static final String DC_DIMMING_SUPPORTED = "dc_dimming_supported";
     private static final String DC_DIMMING_AUTO_MODE = "dc_dimming_auto_mode";
     private static final String DC_DIMMING_BRIGHTNESS = "dc_dimming_brightness";
     private static final String DC_DIMMING_STATE = "dc_dimming_state";
@@ -113,6 +115,7 @@ public class DcDimmingService extends Service {
             timeRunnable = inputParser.parse(mHour + ":" + mMinute);
         } catch (ParseException e) {
         }
+        isSupported();
         updateState(mDcOn);
         if (DEBUG) Log.d(TAG, "DcDimmingService started");
     }
@@ -188,6 +191,14 @@ public class DcDimmingService extends Service {
             }
         }
     };
+
+    private void isSupported() {
+        boolean fileExists = new File(mDcDimmingNode).exists();
+        boolean fileWritable = new File(mDcDimmingNode).canWrite();
+        if (!fileExists) Log.e(TAG, "No such file " + mDcDimmingNode);
+        if (!fileWritable) Log.e(TAG, "Could not write to file " + mDcDimmingNode);
+        Settings.System.putIntForUser(mContext.getContentResolver(), DC_DIMMING_SUPPORTED, (fileExists && fileWritable) ? 1 : 0, UserHandle.USER_CURRENT);
+    }
 
     public synchronized void updateState(boolean enable) {
         String nodeVal = readNode();

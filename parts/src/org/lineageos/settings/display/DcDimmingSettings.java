@@ -60,6 +60,7 @@ public class DcDimmingSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener, SeekBar.OnSeekBarChangeListener {
 
     private static final String TAG = "DcDimmingSettings";
+    private static final String DC_DIMMING_SUPPORTED = "dc_dimming_supported";
     private static final String DC_ENABLE = "dc_dimming_enable";
     private static final String DC_BRIGHTNESS = "dc_dimming_brightness";
     private static final String DC_STATE = "dc_dimming_state";
@@ -144,6 +145,7 @@ public class DcDimmingSettings extends PreferenceFragment
             DcDimmingService.LocalBinder binder = (DcDimmingService.LocalBinder) service;
             mService = binder.getService();
             mDropPreference.setValue(String.valueOf(mService.getAutoMode()));
+            mSwitch.setChecked(mService.isDcDimmingOn());
             final int gamma = Settings.System.getIntForUser(mContext.getContentResolver(),
                     SEEKBAR_PROGRESS, 0,
                     UserHandle.USER_CURRENT);
@@ -242,6 +244,12 @@ public class DcDimmingSettings extends PreferenceFragment
         }
     };
 
+    private boolean isSupported() {
+        return Settings.System.getIntForUser(mContext.getContentResolver(),
+                DC_DIMMING_SUPPORTED, 0,
+                UserHandle.USER_CURRENT) == 1;
+    }
+
     private void updateBrightnessValue(int gamma) {
         int per = (int) ((float) gamma * 100.0f / GAMMA_SPACE_MAX);
         if (!isActivated) {
@@ -255,6 +263,7 @@ public class DcDimmingSettings extends PreferenceFragment
         if (!mBound) {
             return;
         }
+        boolean isSupported = isSupported();
         mode = mService.getAutoMode();
         isActivated = mService.isDcDimmingOn();
         auto = mService.autoEnableDC();
@@ -262,13 +271,18 @@ public class DcDimmingSettings extends PreferenceFragment
         startTime = mService.getStartTime();
         endTime = mService.getEndTime();
 
-        updateBrightnessState((mode >= MODE_AUTO_BRIGHTNESS) && isActivated);
-        updateTimeState((mode == MODE_AUTO_TIME) || (mode == MODE_AUTO_FULL) && isActivated);
+        updateSwitchState(isSupported);
+        updateBrightnessState((mode >= MODE_AUTO_BRIGHTNESS) && isActivated && isSupported);
+        updateTimeState((mode == MODE_AUTO_TIME) || (mode == MODE_AUTO_FULL) && isActivated && isSupported);
         updateBrightnessValue(mSeekBar.getProgress());
         boolean active = isActivated && (auto || manual);
         mStartTimeButton.setText(startTime);
         mEndTimeButton.setText(endTime);
             }
+
+    private void updateSwitchState(boolean enable) {
+        mSwitch.setEnabled(enable);
+    }
 
     private void updateTimeState(boolean enable) {
         mStartTimeButton.setEnabled(enable);
