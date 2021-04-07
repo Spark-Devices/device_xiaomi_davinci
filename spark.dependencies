@@ -22,5 +22,23 @@
         "repository": "kernel_xiaomi_sm6150",
         "target_path": "kernel/xiaomi/sm6150",
         "branch": "fire"
-    }
+    },
+    {
+        "remote": "github",
+        "repository": "spkal01/android_hardware_qcom_audio",
+        "target_path": "hardware/qcom-caf/sm8150/audio",
+        "branch": "fire"
+    },
+     {
+        "remote": "github",
+        "repository": "ArrowOS/android_hardware_qcom_media",
+        "target_path": "hardware/qcom-caf/sm8150/media",
+        "branch": "arrow-11.0-caf-sm8150"
+    }, 
+    {
+        "remote": "github",
+        "repository": "ArrowOS/android_hardware_qcom_display",
+        "target_path": "hardware/qcom-caf/sm8150/display",
+        "branch": "arrow-11.0-caf-sm8150"
+    }    
 ]
