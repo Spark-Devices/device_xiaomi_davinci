@@ -439,7 +439,10 @@ vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 
 # DRM widevine - from 12.0.3.0.QFJMIXM
-vendor/lib64/liboemcrypto.so|2cee717b25559030a61709e826b4a5dae6043c20
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libminksocket.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libtrustedapploader.so
 widevine.b00:vendor/firmware/widevine.b00|00433cee9b7c59f9d628eca71dfe255459e1c860
 widevine.b01:vendor/firmware/widevine.b01|2a9d8fa41e967d790edbad2c858bdee500f2d317
 widevine.b02:vendor/firmware/widevine.b02|1d8d7519c6fb56ca3ef4e54fae30b700d856142a
