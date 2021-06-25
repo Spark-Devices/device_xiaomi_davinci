@@ -38,7 +38,6 @@
 
 #define TOUCH_MAGIC 0x5400
 #define TOUCH_IOC_SETMODE TOUCH_MAGIC + 0
-#define TOUCH_IOC_RESETMODE TOUCH_MAGIC + 6
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
 
@@ -136,15 +135,15 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
-    int arg[2] = {10,1};
+    int arg[2] = {10,0};
     ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
 
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    int arg[2] = {10,0};
-    ioctl(touch_fd_.get(), TOUCH_IOC_RESETMODE, &arg);
+    int arg[2] = {10,-1};
+    ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
 
     return Void();
 }
