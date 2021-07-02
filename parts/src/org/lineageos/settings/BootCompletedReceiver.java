@@ -50,7 +50,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         ThermalUtils.startService(context);
         DcDimmingUtils.startService(context);
         VibratorSettings.restoreValue(context);
-
+        DozeUtils.onBootCompleted(context);
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);
     }

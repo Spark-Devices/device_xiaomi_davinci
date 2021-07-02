@@ -15,3 +15,7 @@ allow system_app vendor_sysfs_battery_supply:file r_file_perms;
 
 allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_vibrator:file rw_file_perms;
+
+type sysfs_doze, sysfs_type, fs_type;
+
+allow system_app sysfs_doze:file rw_file_perms;

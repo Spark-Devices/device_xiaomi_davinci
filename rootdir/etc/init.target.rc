@@ -114,6 +114,10 @@ on boot
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
 
+    # Set doze mode permissions
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
+
 on property:sys.boot_completed=1
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
