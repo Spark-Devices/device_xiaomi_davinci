@@ -6,12 +6,6 @@
         "branch": "fire"
     },
     {
-        "remote": "gitlab",
-        "repository": "spkal01/clang-proton",
-        "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
-        "branch": "fire"
-    },
-    {
         "remote": "devices",
         "repository": "vendor_xiaomi_davinci",
         "target_path": "vendor/xiaomi/davinci",
