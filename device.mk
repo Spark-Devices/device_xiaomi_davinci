@@ -332,6 +332,9 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+PRODUCT_PACKAGES += \
+    init.performance_level.rc
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
